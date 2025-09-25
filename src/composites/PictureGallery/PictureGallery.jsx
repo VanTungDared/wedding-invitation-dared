@@ -8,7 +8,7 @@ import './styles.css'
 const PictureGallery = () => {
   return (
     <div className="gallery-container">
-      <div className="gallery-header">
+      {/* <div className="gallery-header">
         <span>Our Happy Moments</span>
         <img src={Blob} alt="blob-gallery" />
       </div>
@@ -23,7 +23,7 @@ const PictureGallery = () => {
             <GalleryItem data={data} />
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

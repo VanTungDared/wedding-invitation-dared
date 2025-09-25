@@ -27,7 +27,7 @@ const FrontPageInvitation = ({ setInvitationOpen }) => {
           {invTo && (
             <span>
               Dear <br />
-              <span className={styles.invitationTo}>{role} - {invTo}</span>
+              <span className={styles.invitationTo}>{role} {role != "" ? "-" : ""} {invTo}</span>
               <br />
             </span>
           )}

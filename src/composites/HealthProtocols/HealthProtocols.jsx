@@ -6,7 +6,7 @@ import './styles.css'
 const HealthProtocols = () => {
   return (
     <div className="health-container">
-      <h2>Protokol Kesehatan</h2>
+      {/* <h2>Protokol Kesehatan</h2>
       <div className="protocol-container">
         <div className="grid-container">
           {data.map((dat) => (
@@ -16,7 +16,7 @@ const HealthProtocols = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

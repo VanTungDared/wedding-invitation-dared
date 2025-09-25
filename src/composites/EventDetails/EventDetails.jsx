@@ -4,23 +4,23 @@ import styles from './styles.module.css'
 
 const EventDetails = () => {
   const venueUrl =
-    'https://www.google.com/maps/place/Salman+Al-Farisi+Mosque/@-6.188782,106.875347,17z/data=!3m1!4b1!4m5!3m4!1s0x2e69f4ee174c6c43:0xa8bb47340df92921!8m2!3d-6.1888751!4d106.8774866'
+    'https://www.google.com/maps/place/nh%C3%A0+v%C4%83n+ho%C3%A1+c%E1%BB%A5m+4/@21.1283149,105.6850067,17.5z/data=!4m6!3m5!1s0x3134f95c01c3d569:0x52872f344241e841!8m2!3d21.1314!4d105.6859466!16s%2Fg%2F11nrz9gklt!5m2!1e4!1e1?entry=ttu&g_ep=EgoyMDI1MDkyMi4wIKXMDSoASAFQAw%3D%3D'
   const eventDetails = [
     {
-      name: 'Akad Nikah',
-      date: 'Saturday, 27th November 2021',
-      time: '08:00 - 09:00',
-      venue: 'Aula Masjid Salman Al-Farisi',
-      address:
-        'Jl. Komp. Bulog Jl. H. Ten Raya No.147, RT.14/RW.7, Kayu Putih,  Kec. Pulo Gadung, Kota Jakarta Timur',
+      name: 'Nhà cô dâu',
+      date: 'Thứ 4, ngày 04/03/2026',
+      time: '12:00 - 21:00',
+      venue: 'Nhà văn hóa cụm 4, Ô Diên, Hà Nội',
+      // address:
+      //   'Nhà văn hóa cụm 4, Ô Diên, Hà Nội',
     },
     {
-      name: 'Resepsi Nikah',
-      date: 'Saturday, 27th November 2021',
-      time: '11:00 - 13:00',
-      venue: 'Aula Masjid Salman Al-Farisi',
-      address:
-        'Jl. Komp. Bulog Jl. H. Ten Raya No.147, RT.14/RW.7, Kayu Putih,  Kec. Pulo Gadung, Kota Jakarta Timur',
+      name: 'Nhà chú rể',
+      date: 'Thứ 4, ngày 04/03/2026',
+      time: '12:00 - 21:00',
+      venue: 'Đường thống nhất - xóm cát , Đan Phượng, Hà Nội',
+      // address:
+      //   'Đường thống nhất - xóm cát , Đan Phượng, Hà Nội',
     },
   ]
 
@@ -28,8 +28,8 @@ const EventDetails = () => {
     <div>
       <div className={styles.container}>
         <div>
-          <p className={styles.youThere}>WE WANT YOU THERE!</p>
-          <p className={styles.joinUs}>Join our happy moment</p>
+          <p className={styles.youThere}>Chúng tôi hân hạnh được đón tiếp bạn!</p>
+          <p className={styles.joinUs}>Hãy cùng chung vui trong khoảnh khắc hạnh phúc của chúng tôi.</p>
           <div className={styles.eventContainer}>
             {eventDetails.map((item, idx) => {
               return (
@@ -38,7 +38,7 @@ const EventDetails = () => {
                   eventDate={item.date}
                   eventTime={item.time}
                   eventVenue={item.venue}
-                  venueAddress={item.address}
+                  // venueAddress={item.address}
                   key={idx}
                 />
               )
@@ -50,7 +50,7 @@ const EventDetails = () => {
         <div>
           <GoogleMapLocation />
         </div>
-        <Button text="Lihat lokasi" onClick={() => window.open(venueUrl)} />
+        <Button text="Xem địa chỉ" onClick={() => window.open(venueUrl)} />
       </div>
     </div>
   )

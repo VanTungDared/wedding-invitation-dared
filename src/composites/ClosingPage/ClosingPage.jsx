@@ -5,7 +5,7 @@ import closingImg from '../../assets/closing-img.png'
 const ClosingPage = () => {
   return (
     <div className="closing-container">
-      <hr />
+      {/* <hr />
       <p className="closing-surah">
         "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
         pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan
@@ -23,7 +23,7 @@ const ClosingPage = () => {
         <div>
           <img src={closingImg} alt="Closing Prewed" />
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

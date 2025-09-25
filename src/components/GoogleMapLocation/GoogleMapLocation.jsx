@@ -7,7 +7,7 @@ const GoogleMapLocation = () => {
     <>
       <MapContainer
         className={styles.mapLocation}
-        center={[-6.188749993366775, 106.87747132606388]}
+        center={[21.131509790034727, 105.68599477687212]}
         zoom={17}
         scrollWheelZoom={true}
       >
@@ -15,9 +15,9 @@ const GoogleMapLocation = () => {
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker position={[-6.188749993366775, 106.87747132606388]}>
+        <Marker position={[21.131509790034727, 105.68599477687212]}>
           <Tooltip direction="top" offset={[0, -10]} opacity={1} permanent>
-            Masjid Salman Al-Farisi
+            Nhà văn hóa cụm 4
           </Tooltip>
         </Marker>
       </MapContainer>

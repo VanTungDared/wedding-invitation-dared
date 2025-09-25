@@ -14,7 +14,7 @@ const BrideGroom = () => {
         {data.map((el, idx) => (
           <React.Fragment>
             <ProfileCard
-              // img={el.img}
+              img={el.img}
               title={el.title}
               name={el.name}
               description={el.description}

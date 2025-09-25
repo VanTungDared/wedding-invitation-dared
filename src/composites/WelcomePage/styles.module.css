@@ -58,10 +58,13 @@
 
 @media only screen and (max-width: 480px) {
   .container {
+    margin: 0;
+    height: 80vh;
     background: linear-gradient(rgba(91, 61, 44, 0.92), rgba(91, 61, 44, 0.92)),
       url('../../assets/header_img_mobile.png');
-    background-size: 100vw 650px;
     background-repeat: no-repeat;
+    background-position: center;   /* căn giữa */
+    background-size: auto 100%;
   }
 
   .separatorContainer {
