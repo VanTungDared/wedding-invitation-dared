@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { parse } from 'qs'
 import { HeaderSeparator, Button } from '../../components'
 
@@ -27,7 +27,9 @@ const FrontPageInvitation = ({ setInvitationOpen }) => {
           {invTo && (
             <span>
               Dear <br />
-              <span className={styles.invitationTo}>{role} {role != "" ? "-" : ""} {invTo}</span>
+              <span className={styles.invitationTo}>
+                {role} {role !== "" ? "-" : ""} {invTo}
+              </span>
               <br />
             </span>
           )}

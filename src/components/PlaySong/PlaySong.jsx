@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { PlayArrow, Pause, SkipNext, SkipPrevious } from "@material-ui/icons";
 
 import song1 from "../../assets/van_vat_nhu_muon_ta_ben_nhau.mp3";

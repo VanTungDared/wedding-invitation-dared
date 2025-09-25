@@ -1,4 +1,3 @@
-import React from 'react'
 import { Favorite } from '@material-ui/icons'
 
 import styles from './styles.module.css'

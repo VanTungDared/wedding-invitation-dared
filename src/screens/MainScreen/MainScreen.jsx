@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { FrontPageInvitation, WeddingInvitation } from '../'
 import { PlaySong } from '../../components'
 

@@ -1,4 +1,3 @@
-import React from 'react'
 import { HeaderSeparator, Button } from '../../components'
 
 import styles from './styles.module.css'

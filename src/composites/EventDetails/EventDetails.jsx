@@ -1,4 +1,3 @@
-import React from 'react'
 import { Button, EventDetailCard, GoogleMapLocation } from '../../components'
 import styles from './styles.module.css'
 
@@ -38,7 +37,6 @@ const EventDetails = () => {
                   eventDate={item.date}
                   eventTime={item.time}
                   eventVenue={item.venue}
-                  // venueAddress={item.address}
                   key={idx}
                 />
               )

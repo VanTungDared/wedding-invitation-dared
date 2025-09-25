@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaHeart, FaGithub } from 'react-icons/fa'
 
 import './styles.css'
