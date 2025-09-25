@@ -6,14 +6,14 @@ export const data = [
     img: bride,
     title: "Cô dâu",
     name: "Nguyễn Thị Lương",
-    description: "Putri Ketiga",
-    parent: "Bapak Suhartono & Ibu Komariyah",
+    description: "Giáo viên vui vẻ",
+    parent: "Ông Thơm & Bà Hợp",
   },
   {
     img: groom,
     title: "Chú rể",
     name: "Tạ Văn Tùng",
-    description: "Putra Tunggal",
-    parent: "Alm. Bapak Dr. Ing. R. Riesdam Effendi & Ibu Tjut Mutiah",
+    description: "Lập trình thú vị",
+    parent: "Ông Toản & Bà Dung",
   },
 ];
