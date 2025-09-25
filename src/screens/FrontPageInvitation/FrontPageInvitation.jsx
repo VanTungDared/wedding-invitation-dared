@@ -6,10 +6,12 @@ import styles from './styles.module.css'
 
 const FrontPageInvitation = ({ setInvitationOpen }) => {
   const [invTo, setInvTo] = useState('')
+  const [role, setRole] = useState('')
 
   useEffect(() => {
-    const invTo = parse(window.location.search.substring(1))
-    setInvTo(invTo.to)
+    const query = parse(window.location.search.substring(1))
+    if (query.to) setInvTo(query.to)
+    if (query.role) setRole(query.role)
   }, [])
 
   return (
@@ -18,23 +20,22 @@ const FrontPageInvitation = ({ setInvitationOpen }) => {
       <div className={styles.container}>
         <div className={styles.separatorContainer}>
           <HeaderSeparator />
-          <p className={styles.textName}>Arifin &amp; Fitria</p>
+          <p className={styles.textName}>Văn Tùng <br></br>&amp;<br></br> Nguyễn Lương</p>
           <HeaderSeparator />
         </div>
         <p className={styles.invitationText}>
           {invTo && (
             <span>
               Dear <br />
-              <span className={styles.invitationTo}>{invTo}</span>
+              <span className={styles.invitationTo}>{role} - {invTo}</span>
               <br />
             </span>
           )}
-          We are getting married, and we want you <br /> to be part of our
-          special day
+          “Chúng tôi sắp về chung một nhà, và thật hạnh phúc nếu có bạn cùng chia sẻ ngày trọng đại.”
         </p>
         <div className={styles.buttonContainer}>
           <Button
-            text="Open Invitation"
+            text="Lời mở đầu"
             onClick={() => setInvitationOpen(true)}
           />
         </div>

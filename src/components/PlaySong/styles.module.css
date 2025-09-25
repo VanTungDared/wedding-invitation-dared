@@ -1,11 +1,24 @@
-.playSongButton {
-  z-index: 1000;
+.playSongWrapper {
   position: fixed;
-  top: 10px;
-  right: 5px;
-  padding: 5px;
-  color: #ffffff;
-  border: none;
-  border-radius: 10px;
-  background-color: #412222;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center; /* căn giữa ngang */
+  align-items: center;
+
+  gap: 12px; /* khoảng cách giữa các nút */
+  background: white; /* giống header */
+  border-bottom: 1px solid #e0e0e0; /* viền dưới giống header */
+  z-index: 1000; /* để nổi lên trên cùng */
+}
+
+.playSongButton {
+  background: white;
+  border: 0px solid transparent;
+  border-radius: 0; /* vuông hẳn */
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: background 0.2s;
 }

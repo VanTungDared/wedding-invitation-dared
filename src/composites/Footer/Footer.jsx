@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="footer-container">
       <p>
         Designed &amp; Made with <FaHeart className="icon" /> <br />
-        by Muhammad Arifin &amp; Fitria Andaryani
+        by VanTung &amp; Other
       </p>
       <p>
         See code on{' '}

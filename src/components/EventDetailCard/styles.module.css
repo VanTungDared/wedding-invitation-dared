@@ -23,13 +23,13 @@
 
 .detailText {
   margin-left: 20px;
-  font-family: Poppins;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   font-size: 18px;
 }
 
 .addressText {
-  font-family: Poppins;
+  font-family: 'Quicksand', sans-serif;
   font-size: 14px;
   line-height: 24px;
 }

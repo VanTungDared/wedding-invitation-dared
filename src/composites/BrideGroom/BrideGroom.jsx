@@ -9,12 +9,12 @@ import { data } from './data'
 const BrideGroom = () => {
   return (
     <div className={styles.container}>
-      <p className={styles.title}>The Bride &amp; The Groom</p>
+      <p className={styles.title}>Cô dâu &amp; Chú rể</p>
       <div className={styles.cardContainer}>
         {data.map((el, idx) => (
           <React.Fragment>
             <ProfileCard
-              img={el.img}
+              // img={el.img}
               title={el.title}
               name={el.name}
               description={el.description}
